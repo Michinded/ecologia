@@ -33,6 +33,30 @@
             </ul>
 
             <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+            <!--Correo de contacto -->
+            <p>Correos de contacto: <a href="mailto:mexeded@gmail.com"> Mexeded Tech </a> mexeded@gmail.com - <a href="mailto:michinded@gmail.com"> Michinded Software</a> michinded@gmail.com</p>
+            <!--Redes Sociales -->
+            <div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Facebook</h5>
+        <p class="card-text">Síguenos en Facebook para obtener las últimas actualizaciones:</p>
+        <a href="https://www.facebook.com/Michinded" class="btn btn-primary"><i class="fab fa-facebook"></i> Seguir en Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">GitHub</h5>
+        <p class="card-text">Echa un vistazo a nuestro repositorio en GitHub:</p>
+        <a href="https://github.com/Michinded" class="btn btn-dark"><i class="fab fa-github"></i> Repositorio en GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <p>¡Gracias de nuevo por tu visita!</p>
           </div>
