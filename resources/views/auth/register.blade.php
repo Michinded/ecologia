@@ -1,4 +1,10 @@
 @extends('layouts.app')
+@section('PageTitulo')
+{{ __('Registarme') }}
+@endsection
+@section('CNavbar')
+    {{ __('Registrarme') }}
+@endsection
 
 @section('content')
 <div class="container">
