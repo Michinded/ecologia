@@ -61,10 +61,27 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    
+                                    <a class="dropdown-item" href="{{ route('home') }}">
+                                        {{ __('Panel de control') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('crear') }}">
+                                        {{ __('Crear nueva publicación') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="#">
+                                        {{ __('Editar publicación') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="#">
+                                        {{ __('Eliminar publicación') }}
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar sesión') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

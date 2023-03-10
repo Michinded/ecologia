@@ -2,9 +2,7 @@
 @section('PageTitulo')
 {{ __('Nuevo articulo') }}
 @endsection
-@section('MiPagina')
-    {{ __('Crear nueva publicacion') }}
-@endsection
+
 @section('content')
 
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,13 @@ Route::controller(PageController::class)->group(function () {
     Route::get('about',            'about')->name('about');
     Route::get('thanks',            'thanks')->name('thanks');
 });
+
+// Grupo de rutas privadas
+Route::middleware(['auth'])->group(function () {
+    Route::get('crear',             [HomeController::class, 'crear'])->name('crear');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
