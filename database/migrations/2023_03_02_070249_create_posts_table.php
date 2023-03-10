@@ -16,9 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('body');
-            $table->text('images')->nullable();
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->text('references')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
@@ -31,5 +30,9 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('posts');
+
+        Schema::table('posts', function (Blueprint $table) {
+            $table->dropColumn('images');
+        });
     }
 };

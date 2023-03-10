@@ -27,6 +27,8 @@ Route::controller(PageController::class)->group(function () {
 // Grupo de rutas privadas
 Route::middleware(['auth'])->group(function () {
     Route::get('crear',             [HomeController::class, 'crear'])->name('crear');
+    Route::post('/posts', [App\Http\Controllers\PostController::class, 'store'])->name('posts.store');
+    Route::get('/posts', [App\Http\Controllers\PostController::class, 'index'])->name('posts.index');
 });
 
 

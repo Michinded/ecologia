@@ -19,7 +19,9 @@
     </p>
     <br>
     <p>
-        <img src="{{ asset('storage/' . $post->image) }}" alt="Imagen del post" width="500px" height="500px">
+    @foreach($post->postImages as $image)
+    <img src="{{ asset('storage/images/'.$image->path) }}" alt="">
+    @endforeach
     </p>
     <br>
     <div>
