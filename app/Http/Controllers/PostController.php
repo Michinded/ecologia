@@ -22,6 +22,7 @@ class PostController extends Controller
         $validatedData = $request->validate([
             'title' => 'required|unique:posts|max:255',
             'body' => 'required',
+            'references' => 'required',
             'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
     
@@ -48,7 +49,7 @@ class PostController extends Controller
             }
         }
     
-        return redirect()->route('blogs')
+        return redirect()->route('home')
                          ->with('success','Post created successfully.');
     }
 
