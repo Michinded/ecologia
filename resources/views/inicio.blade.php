@@ -12,7 +12,7 @@
 <BR></BR>
     <div class="container">
         <h1>Nuestra revista</h1>
-        <p>Noticias de Ecologia, vida silvestre, animales, plantas, etc.</p>
+        <p>Noticias de Ecologia, ahorro de energía, dispositivos y más</p>
     </div>
 @endsection
 

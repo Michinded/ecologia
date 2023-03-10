@@ -6,6 +6,7 @@
 
 @section('content')
     <center>
+        <br><br><br>
     <h1>{{$post->title}}</h1>
     <br>
     <span>Escrito por: {{$post->user->name}}</span>

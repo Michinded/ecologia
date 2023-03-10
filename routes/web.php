@@ -22,3 +22,6 @@ Route::controller(PageController::class)->group(function () {
     Route::get('about',            'about')->name('about');
     Route::get('thanks',            'thanks')->name('thanks');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -52,7 +52,7 @@
 </main>
 <footer>
     <div class="container">
-        <p>Derechos de autor © 2023 Equipo: LOS PAMBAZOS 4A LOGÍSTICA CECYTEQ PLANTEL #83</p>
+        <p>Derechos de autor © 2023 Equipo 2</p>
     </div>
 </footer>
 </body>
