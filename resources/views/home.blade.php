@@ -29,7 +29,7 @@
                             <br>
                             <li class="nav-item"><a href="{{ route('blogs') }}">Blogs de la revista</a></li>
                             <br>
-                            <li class="nav-item"><a href="#">Crear nueva publicación</a></li>
+                            <li class="nav-item"><a href="{{ route('crear') }}">Crear nueva publicación</a></li>
                             <br>
                             <li class="nav-item"><a href="#">Editar publicaciones</a></li>
                             <br>
