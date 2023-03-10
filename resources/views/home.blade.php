@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('PageTitulo')
+    {{ __('Panel de opciones') }}
+@endsection
 @section('MiPagina')
     {{ __('Pagina Principal') }}
 @endsection
