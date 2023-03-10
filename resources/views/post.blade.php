@@ -18,11 +18,35 @@
         {{$post->body}}
     </p>
     <br>
-    <p>
-    @foreach($post->postImages as $image)
-    <img src="{{ asset('storage/images/'.$image->path) }}" alt="">
+    <!-- Imagenes -->
+    @if(!empty($post->postImages) && count($post->postImages) > 0)
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    @foreach ($post->postImages as $index => $image)
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
     @endforeach
-    </p>
+  </ol>
+  <div class="carousel-inner">
+    @foreach ($post->postImages as $index => $image)
+        <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+          <img class="d-block w-100 carousel-img" src="{{ asset('storage/images/'.$image->path) }}" alt="">
+        </div>
+    @endforeach
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+            @else
+                <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1">
+            @endif
+
+    <!-- Imagenes -->
     <br>
     <div>
         <p>Referencias: {{$post->references}}</p>

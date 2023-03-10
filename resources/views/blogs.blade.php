@@ -13,7 +13,12 @@
         @foreach($posts as $post)
         
             <article>
-				<img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1">
+            @if(!empty($post->postImages) && count($post->postImages) > 0)
+            <?php $randomIndex = rand(0, count($post->postImages) - 1); ?>
+            <img src="{{ asset('storage/images/'.$post->postImages[$randomIndex]->path) }}" alt="">
+            @else
+                <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1">
+            @endif
 				<a href="{{ route('post', $post->slug)}}" class="card-title"><h5>{{ $post->title }}</h5></a>
 				<p>{{Str::limit($post->body, 150)}}</p>
                 <p class="card-text">Por: {{ $post->user->name }}</p>
