@@ -15,9 +15,9 @@
             <article>
             @if(!empty($post->postImages) && count($post->postImages) > 0)
             <?php $randomIndex = rand(0, count($post->postImages) - 1); ?>
-            <img src="{{ asset('storage/images/'.$post->postImages[$randomIndex]->path) }}" alt="">
+            <img src="{{ asset('storage/images/'.$post->postImages[$randomIndex]->path) }}" alt="image" height="150px" weight="160px">
             @else
-                <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1">
+                <img src="{{ asset('images/img1.png') }}" alt="Artículo" height="150px" weight="160px">
             @endif
 				<a href="{{ route('post', $post->slug)}}" class="card-title"><h5>{{ $post->title }}</h5></a>
 				<p>{{Str::limit($post->body, 150)}}</p>
