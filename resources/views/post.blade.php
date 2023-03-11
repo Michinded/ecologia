@@ -19,6 +19,8 @@
     </p>
     <br>
     <!-- Imagenes -->
+    <section class="featured">
+      <div class="container">
     @if(!empty($post->postImages) && count($post->postImages) > 0)
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -29,7 +31,7 @@
   <div class="carousel-inner">
     @foreach ($post->postImages as $index => $image)
         <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-          <img class="d-block w-100 carousel-img" src="{{ asset('storage/images/'.$image->path) }}" alt="post_image" height="200px" weight="220px">
+          <img class="d-block w-100 carousel-img" src="{{ asset('storage/images/'.$image->path) }}" alt="post_image">
         </div>
     @endforeach
   </div>
@@ -45,7 +47,8 @@
             @else
                 <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1" height="120px" weight="120px">
             @endif
-
+        </div>
+          </section>
     <!-- Imagenes -->
     <br>
     <div>
