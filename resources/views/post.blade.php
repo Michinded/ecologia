@@ -19,8 +19,6 @@
     </p>
     <br>
     <!-- Imagenes -->
-    <section class="featured">
-      <div class="container">
     @if(!empty($post->postImages) && count($post->postImages) > 0)
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -47,8 +45,6 @@
             @else
                 <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1" height="120px" weight="120px">
             @endif
-        </div>
-          </section>
     <!-- Imagenes -->
     <br>
     <div>

@@ -9,9 +9,9 @@
 <br><br><br>
     <div class="container">
         <h1>TODOS NUESTROS ARTICULOS</h1>
-        
-        @foreach($posts as $post)
         <section class="articles">
+        @foreach($posts as $post)
+        
             <article>
             @if(!empty($post->postImages) && count($post->postImages) > 0)
             <?php $randomIndex = rand(0, count($post->postImages) - 1); ?>
@@ -25,9 +25,9 @@
 				<a href="{{ route('post', $post->slug)}}">Leer más</a>
                 <p class="card-text"><small class="text-muted">Última actualización: {{ $post->updated_at->format('d/m/Y H:i') }}</small></p>
 			</article>
-        </section>
-        @endforeach
         
+        @endforeach
+        </section>
            <!-- {{ $posts->links() }}-->
             {{ $posts->links('pagination::default')->with('prevClass', 'invisible')->with('nextClass', 'invisible') }}
     </div>
