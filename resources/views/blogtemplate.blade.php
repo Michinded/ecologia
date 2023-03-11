@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://disociando.up.railway.app/css/carga.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Prueba de CSS manual -->
+  <!-- metodo de laravel para cargar archivos de css 
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">-->
 </head>
 <body>
 <div class="loader-wrapper">
