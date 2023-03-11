@@ -43,7 +43,7 @@
   </a>
 </div>
             @else
-                <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1">
+                <img src="{{ asset('images/img1.png') }}" alt="Artículo Reciente 1" height="120px" weight="120px">
             @endif
 
     <!-- Imagenes -->

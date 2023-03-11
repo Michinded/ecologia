@@ -17,7 +17,7 @@
   <nav class="navbar navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="{{url('/')}}">
       <img src="{{asset('images/logo.png')}}" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-      Revista Ecologica
+      Disociando
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
 </main>
 <footer>
     <div class="container">
-        <p>Derechos de autor © 2023 Equipo 2</p>
+        <p>Derechos de autor © 2023 Disociando - LOS PAMBAZOS</p>
     </div>
 </footer>
 </body>
